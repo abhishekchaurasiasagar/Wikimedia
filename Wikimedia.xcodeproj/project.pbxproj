@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19B4AA89067EEF126A72A7C7 /* Pods_Wikimedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4D1BD5125F846B4F687991 /* Pods_Wikimedia.framework */; };
 		46178ADE2B4C0327008E81F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178ADD2B4C0327008E81F3 /* AppDelegate.swift */; };
 		46178AE02B4C0327008E81F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178ADF2B4C0327008E81F3 /* SceneDelegate.swift */; };
-		46178AE22B4C0327008E81F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178AE12B4C0327008E81F3 /* ViewController.swift */; };
 		46178AE52B4C0327008E81F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46178AE32B4C0327008E81F3 /* Main.storyboard */; };
 		46178AE72B4C0328008E81F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46178AE62B4C0328008E81F3 /* Assets.xcassets */; };
 		46178AEA2B4C0328008E81F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46178AE82B4C0328008E81F3 /* LaunchScreen.storyboard */; };
+		46178AF42B4C047B008E81F3 /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178AF32B4C047B008E81F3 /* ProductVC.swift */; };
+		46178AF82B4C049E008E81F3 /* ProductTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178AF62B4C049E008E81F3 /* ProductTVC.swift */; };
+		46178AF92B4C049E008E81F3 /* ProductTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46178AF72B4C049E008E81F3 /* ProductTVC.xib */; };
+		46178AFC2B4C084A008E81F3 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178AFB2B4C084A008E81F3 /* UITableView+Extension.swift */; };
+		46178AFF2B4C1457008E81F3 /* AlamoNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178AFE2B4C1457008E81F3 /* AlamoNetworkManager.swift */; };
+		46178B022B4C14B1008E81F3 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178B012B4C14B1008E81F3 /* Api.swift */; };
+		46178B042B4C165B008E81F3 /* ProductApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178B032B4C165B008E81F3 /* ProductApi.swift */; };
+		46178B072B4C16EF008E81F3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178B062B4C16EF008E81F3 /* Product.swift */; };
+		46178B092B4C18D8008E81F3 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178B082B4C18D8008E81F3 /* ApiProvider.swift */; };
+		46178B0B2B4C2C77008E81F3 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178B0A2B4C2C77008E81F3 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46178ADA2B4C0327008E81F3 /* Wikimedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wikimedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46178ADD2B4C0327008E81F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46178ADF2B4C0327008E81F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		46178AE12B4C0327008E81F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46178AE42B4C0327008E81F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46178AE62B4C0328008E81F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46178AE92B4C0328008E81F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46178AEB2B4C0328008E81F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46178AF32B4C047B008E81F3 /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		46178AF62B4C049E008E81F3 /* ProductTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTVC.swift; sourceTree = "<group>"; };
+		46178AF72B4C049E008E81F3 /* ProductTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTVC.xib; sourceTree = "<group>"; };
+		46178AFB2B4C084A008E81F3 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		46178AFE2B4C1457008E81F3 /* AlamoNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoNetworkManager.swift; sourceTree = "<group>"; };
+		46178B012B4C14B1008E81F3 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		46178B032B4C165B008E81F3 /* ProductApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductApi.swift; sourceTree = "<group>"; };
+		46178B062B4C16EF008E81F3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		46178B082B4C18D8008E81F3 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		46178B0A2B4C2C77008E81F3 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		BC4D1BD5125F846B4F687991 /* Pods_Wikimedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wikimedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DB6DA1C071EFC26351CAA6 /* Pods-Wikimedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikimedia.release.xcconfig"; path = "Target Support Files/Pods-Wikimedia/Pods-Wikimedia.release.xcconfig"; sourceTree = "<group>"; };
+		FA2F647475939BBCB36A6243 /* Pods-Wikimedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikimedia.debug.xcconfig"; path = "Target Support Files/Pods-Wikimedia/Pods-Wikimedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B4AA89067EEF126A72A7C7 /* Pods_Wikimedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12E1B965FC4F8E9742939D43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC4D1BD5125F846B4F687991 /* Pods_Wikimedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		46178AD12B4C0327008E81F3 = {
 			isa = PBXGroup;
 			children = (
 				46178ADC2B4C0327008E81F3 /* Wikimedia */,
 				46178ADB2B4C0327008E81F3 /* Products */,
+				54C70228EE9CB90527CD6444 /* Pods */,
+				12E1B965FC4F8E9742939D43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,89 @@
 		46178ADC2B4C0327008E81F3 /* Wikimedia */ = {
 			isa = PBXGroup;
 			children = (
+				46178B052B4C16D9008E81F3 /* Model */,
+				46178AFD2B4C1442008E81F3 /* Network */,
+				46178AFA2B4C06F9008E81F3 /* Extension */,
+				46178AF12B4C0445008E81F3 /* ProductController */,
 				46178ADD2B4C0327008E81F3 /* AppDelegate.swift */,
 				46178ADF2B4C0327008E81F3 /* SceneDelegate.swift */,
-				46178AE12B4C0327008E81F3 /* ViewController.swift */,
 				46178AE32B4C0327008E81F3 /* Main.storyboard */,
 				46178AE62B4C0328008E81F3 /* Assets.xcassets */,
 				46178AE82B4C0328008E81F3 /* LaunchScreen.storyboard */,
 				46178AEB2B4C0328008E81F3 /* Info.plist */,
 			);
 			path = Wikimedia;
+			sourceTree = "<group>";
+		};
+		46178AF12B4C0445008E81F3 /* ProductController */ = {
+			isa = PBXGroup;
+			children = (
+				46178AF52B4C0482008E81F3 /* Cell */,
+				46178AF22B4C0463008E81F3 /* Views */,
+			);
+			path = ProductController;
+			sourceTree = "<group>";
+		};
+		46178AF22B4C0463008E81F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46178AF32B4C047B008E81F3 /* ProductVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46178AF52B4C0482008E81F3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				46178AF62B4C049E008E81F3 /* ProductTVC.swift */,
+				46178AF72B4C049E008E81F3 /* ProductTVC.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		46178AFA2B4C06F9008E81F3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				46178AFB2B4C084A008E81F3 /* UITableView+Extension.swift */,
+				46178B0A2B4C2C77008E81F3 /* UIImageView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		46178AFD2B4C1442008E81F3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				46178B002B4C148B008E81F3 /* Api */,
+				46178AFE2B4C1457008E81F3 /* AlamoNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		46178B002B4C148B008E81F3 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				46178B012B4C14B1008E81F3 /* Api.swift */,
+				46178B082B4C18D8008E81F3 /* ApiProvider.swift */,
+				46178B032B4C165B008E81F3 /* ProductApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		46178B052B4C16D9008E81F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46178B062B4C16EF008E81F3 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54C70228EE9CB90527CD6444 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F647475939BBCB36A6243 /* Pods-Wikimedia.debug.xcconfig */,
+				E2DB6DA1C071EFC26351CAA6 /* Pods-Wikimedia.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46178AEE2B4C0328008E81F3 /* Build configuration list for PBXNativeTarget "Wikimedia" */;
 			buildPhases = (
+				720ECCF91B53AC59D8151DE2 /* [CP] Check Pods Manifest.lock */,
 				46178AD62B4C0327008E81F3 /* Sources */,
 				46178AD72B4C0327008E81F3 /* Frameworks */,
 				46178AD82B4C0327008E81F3 /* Resources */,
+				25402C5C2C2EC1755C86491D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46178AEA2B4C0328008E81F3 /* LaunchScreen.storyboard in Resources */,
+				46178AF92B4C049E008E81F3 /* ProductTVC.xib in Resources */,
 				46178AE72B4C0328008E81F3 /* Assets.xcassets in Resources */,
 				46178AE52B4C0327008E81F3 /* Main.storyboard in Resources */,
 			);
@@ -133,13 +243,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25402C5C2C2EC1755C86491D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wikimedia/Pods-Wikimedia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wikimedia/Pods-Wikimedia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wikimedia/Pods-Wikimedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		720ECCF91B53AC59D8151DE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wikimedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46178AD62B4C0327008E81F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46178AE22B4C0327008E81F3 /* ViewController.swift in Sources */,
+				46178AF42B4C047B008E81F3 /* ProductVC.swift in Sources */,
+				46178B0B2B4C2C77008E81F3 /* UIImageView+Extension.swift in Sources */,
+				46178AFF2B4C1457008E81F3 /* AlamoNetworkManager.swift in Sources */,
+				46178B072B4C16EF008E81F3 /* Product.swift in Sources */,
+				46178AF82B4C049E008E81F3 /* ProductTVC.swift in Sources */,
+				46178AFC2B4C084A008E81F3 /* UITableView+Extension.swift in Sources */,
 				46178ADE2B4C0327008E81F3 /* AppDelegate.swift in Sources */,
+				46178B022B4C14B1008E81F3 /* Api.swift in Sources */,
+				46178B092B4C18D8008E81F3 /* ApiProvider.swift in Sources */,
+				46178B042B4C165B008E81F3 /* ProductApi.swift in Sources */,
 				46178AE02B4C0327008E81F3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,11 +447,13 @@
 		};
 		46178AEF2B4C0328008E81F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2F647475939BBCB36A6243 /* Pods-Wikimedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wikimedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,6 +461,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,19 +469,24 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wikimedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		46178AF02B4C0328008E81F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2DB6DA1C071EFC26351CAA6 /* Pods-Wikimedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wikimedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,6 +494,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +502,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wikimedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
