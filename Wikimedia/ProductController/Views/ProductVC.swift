@@ -73,7 +73,7 @@ extension ProductVC: UITableViewDataSource{
             cell.subTitleLbl.text = items.extract
             if let imgURL = items.thumbnail{
                 cell.imgView.isHidden = false
-                cell.productImgView.imageFromUrl(strUrl: imgURL, placeholder: .dummyBankImage)
+                cell.productImgView.load(url: imgURL)
             }
             else{cell.imgView.isHidden = true}
         }

@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import SDWebImage
+//import SDWebImage
 
 extension UIImageView {
     func load(url: String){
@@ -25,15 +25,15 @@ extension UIImageView {
 }
 
 
-extension UIImageView{
-    enum DefaultPlaceholderImg: String{
-        case dummyBankImage = "bank_PlaceholderImg"
-        case profileDummyImage = "profile_PlaceholderImg"
-    }
-    
-    func imageFromUrl(strUrl: String, placeholder: DefaultPlaceholderImg) {
-        let url = URL(string: strUrl)
-        sd_setImage(with: url, placeholderImage: UIImage(named: placeholder.rawValue), options: .refreshCached, context: nil)
-    }
-    
-}
+//extension UIImageView{
+//    enum DefaultPlaceholderImg: String{
+//        case dummyBankImage = "bank_PlaceholderImg"
+//        case profileDummyImage = "profile_PlaceholderImg"
+//    }
+//    
+//    func imageFromUrl(strUrl: String, placeholder: DefaultPlaceholderImg) {
+//        let url = URL(string: strUrl)
+//        sd_setImage(with: url, placeholderImage: UIImage(named: placeholder.rawValue), options: .refreshCached, context: nil)
+//    }
+//    
+//}
