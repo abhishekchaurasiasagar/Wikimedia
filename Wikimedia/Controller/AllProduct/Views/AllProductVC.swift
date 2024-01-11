@@ -14,13 +14,19 @@ class AllProductVC: UIViewController {
     @IBOutlet weak var phoneProductTV: UITableView!
     @IBOutlet weak var catogaryProductTV: UITableView!
     var allProduct: [Brand] = []
+    var totalItem = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navTitleView.navTitle.text = "Product"
-        DispatchQueue.global(qos: .background).async {
-            self.getHomeAPIDtails()
-        }
+        loadData(skip: 0)
         registerCell()
+    }
+    
+    func loadData(skip: Int){
+        DispatchQueue.global(qos: .background).async {
+            self.getHomeAPIDtails(skip: skip)
+        }
     }
     
     func registerCell(){
@@ -29,12 +35,14 @@ class AllProductVC: UIViewController {
         catogaryProductTV.register(UINib(nibName: "AllProductTVC", bundle: nil), forCellReuseIdentifier: "AllProductTVC")
     }
     
-    func getHomeAPIDtails(){
-        ApiProviderImpl.instance.allCategaryProductApi.getAllProductCategories { product, error in
+    func getHomeAPIDtails(skip:Int){
+        ApiProviderImpl.instance.allCategaryProductApi.getLimitedProduct(limit: 10, skip: skip) { product, error in
             if error == nil{
-                guard let pro = product?.products else {return}
-                self.allProduct = pro
-                print(self.allProduct)
+                if let product = product{
+                    self.allProduct.append(contentsOf: product.products)
+                    self.totalItem = product.total
+                    print(self.allProduct)
+                }
             }else{
                 print("Error \(String(describing: error))")
             }
@@ -69,6 +77,14 @@ extension AllProductVC: UITableViewDataSource{
             cell.detailLbl.text = items.description
             cell.prizeLbl.text = "\(String(describing: items.price))"
             cell.ratingLbl.text =  "\(String(describing: items.rating))"
+        }
+        
+        //Pagination
+        let totolLocal = allProduct.count
+        if indexPath.row ==  totolLocal - 1{
+            if totalItem > totolLocal{
+                loadData(skip: totolLocal)
+            }
         }
         return cell
     }
