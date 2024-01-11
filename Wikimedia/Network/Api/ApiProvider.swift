@@ -7,16 +7,20 @@
 
 protocol ApiProvider {
     var productApi: ProductApi { get }
+    var allCategaryProductApi : AllCategaryProductApi {get}
 }
 
 class ApiProviderImpl: ApiProvider {
+
     static var instance = ApiProviderImpl()
     
-    private init() {
-        //
-    }
+    private init() {}
     
     var productApi: ProductApi {
         return ProductApiImpl()
+    }
+    
+    var allCategaryProductApi: AllCategaryProductApi{
+        return AllCategaryProductApiImpl()
     }
 }

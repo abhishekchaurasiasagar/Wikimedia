@@ -28,6 +28,7 @@ class ProductVC: UIViewController {
     func registerCell(){
         productTV.dataSource = self
         productTV.delegate = self
+        
         productSearchBar.delegate = self
         productTV.registerCell(type: ProductTVC.self)
     }

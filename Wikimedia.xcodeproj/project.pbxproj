@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19B4AA89067EEF126A72A7C7 /* Pods_Wikimedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4D1BD5125F846B4F687991 /* Pods_Wikimedia.framework */; };
 		46178ADE2B4C0327008E81F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178ADD2B4C0327008E81F3 /* AppDelegate.swift */; };
 		46178AE02B4C0327008E81F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178ADF2B4C0327008E81F3 /* SceneDelegate.swift */; };
 		46178AE52B4C0327008E81F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46178AE32B4C0327008E81F3 /* Main.storyboard */; };
@@ -23,7 +22,17 @@
 		46178B072B4C16EF008E81F3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178B062B4C16EF008E81F3 /* Product.swift */; };
 		46178B092B4C18D8008E81F3 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178B082B4C18D8008E81F3 /* ApiProvider.swift */; };
 		46178B0B2B4C2C77008E81F3 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46178B0A2B4C2C77008E81F3 /* UIImageView+Extension.swift */; };
+		4627BB342B4E9191001E85FA /* SearchProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4627BB332B4E9191001E85FA /* SearchProductVC.swift */; };
+		4627BB382B4EDA6D001E85FA /* AllProductTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4627BB362B4EDA6D001E85FA /* AllProductTVC.swift */; };
+		4627BB392B4EDA6D001E85FA /* AllProductTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4627BB372B4EDA6D001E85FA /* AllProductTVC.xib */; };
+		463546452B4EE7B900C60CA7 /* CategaryProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463546442B4EE7B900C60CA7 /* CategaryProduct.swift */; };
+		463546472B4EE92200C60CA7 /* AllCategaryProductApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463546462B4EE92200C60CA7 /* AllCategaryProductApi.swift */; };
+		463546492B4FE27E00C60CA7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463546482B4FE27E00C60CA7 /* String+Extension.swift */; };
 		46E8C2022B4D58970074EF7D /* NetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8C2012B4D58970074EF7D /* NetworkType.swift */; };
+		46E8C2052B4E74F70074EF7D /* AllProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E8C2042B4E74F70074EF7D /* AllProduct.storyboard */; };
+		46E8C2092B4E75570074EF7D /* AllProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8C2082B4E75570074EF7D /* AllProductVC.swift */; };
+		46E8C2102B4E7E430074EF7D /* NavigationCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8C20F2B4E7E430074EF7D /* NavigationCustomView.swift */; };
+		46E8C2122B4E7E5B0074EF7D /* NavigationCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E8C2112B4E7E5B0074EF7D /* NavigationCustomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,10 +53,17 @@
 		46178B062B4C16EF008E81F3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		46178B082B4C18D8008E81F3 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
 		46178B0A2B4C2C77008E81F3 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		4627BB332B4E9191001E85FA /* SearchProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductVC.swift; sourceTree = "<group>"; };
+		4627BB362B4EDA6D001E85FA /* AllProductTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductTVC.swift; sourceTree = "<group>"; };
+		4627BB372B4EDA6D001E85FA /* AllProductTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllProductTVC.xib; sourceTree = "<group>"; };
+		463546442B4EE7B900C60CA7 /* CategaryProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategaryProduct.swift; sourceTree = "<group>"; };
+		463546462B4EE92200C60CA7 /* AllCategaryProductApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategaryProductApi.swift; sourceTree = "<group>"; };
+		463546482B4FE27E00C60CA7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		46E8C2012B4D58970074EF7D /* NetworkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkType.swift; sourceTree = "<group>"; };
-		BC4D1BD5125F846B4F687991 /* Pods_Wikimedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wikimedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2DB6DA1C071EFC26351CAA6 /* Pods-Wikimedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikimedia.release.xcconfig"; path = "Target Support Files/Pods-Wikimedia/Pods-Wikimedia.release.xcconfig"; sourceTree = "<group>"; };
-		FA2F647475939BBCB36A6243 /* Pods-Wikimedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikimedia.debug.xcconfig"; path = "Target Support Files/Pods-Wikimedia/Pods-Wikimedia.debug.xcconfig"; sourceTree = "<group>"; };
+		46E8C2042B4E74F70074EF7D /* AllProduct.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllProduct.storyboard; sourceTree = "<group>"; };
+		46E8C2082B4E75570074EF7D /* AllProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductVC.swift; sourceTree = "<group>"; };
+		46E8C20F2B4E7E430074EF7D /* NavigationCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCustomView.swift; sourceTree = "<group>"; };
+		46E8C2112B4E7E5B0074EF7D /* NavigationCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationCustomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,28 +71,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B4AA89067EEF126A72A7C7 /* Pods_Wikimedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12E1B965FC4F8E9742939D43 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BC4D1BD5125F846B4F687991 /* Pods_Wikimedia.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		46178AD12B4C0327008E81F3 = {
 			isa = PBXGroup;
 			children = (
 				46178ADC2B4C0327008E81F3 /* Wikimedia */,
 				46178ADB2B4C0327008E81F3 /* Products */,
-				54C70228EE9CB90527CD6444 /* Pods */,
-				12E1B965FC4F8E9742939D43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,13 +96,15 @@
 		46178ADC2B4C0327008E81F3 /* Wikimedia */ = {
 			isa = PBXGroup;
 			children = (
+				46178AFA2B4C06F9008E81F3 /* Extension */,
+				46E8C20E2B4E7DD80074EF7D /* UIView+XIB */,
+				46E8C20B2B4E7D7C0074EF7D /* Utility */,
+				46E8C2062B4E75310074EF7D /* Controller */,
+				46E8C2032B4E74C40074EF7D /* Screens */,
 				46178B052B4C16D9008E81F3 /* Model */,
 				46178AFD2B4C1442008E81F3 /* Network */,
-				46178AFA2B4C06F9008E81F3 /* Extension */,
-				46178AF12B4C0445008E81F3 /* ProductController */,
 				46178ADD2B4C0327008E81F3 /* AppDelegate.swift */,
 				46178ADF2B4C0327008E81F3 /* SceneDelegate.swift */,
-				46178AE32B4C0327008E81F3 /* Main.storyboard */,
 				46178AE62B4C0328008E81F3 /* Assets.xcassets */,
 				46178AE82B4C0328008E81F3 /* LaunchScreen.storyboard */,
 				46178AEB2B4C0328008E81F3 /* Info.plist */,
@@ -136,6 +143,7 @@
 			children = (
 				46178AFB2B4C084A008E81F3 /* UITableView+Extension.swift */,
 				46178B0A2B4C2C77008E81F3 /* UIImageView+Extension.swift */,
+				463546482B4FE27E00C60CA7 /* String+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -156,6 +164,7 @@
 				46178B082B4C18D8008E81F3 /* ApiProvider.swift */,
 				46178B032B4C165B008E81F3 /* ProductApi.swift */,
 				46E8C2012B4D58970074EF7D /* NetworkType.swift */,
+				463546462B4EE92200C60CA7 /* AllCategaryProductApi.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -164,17 +173,86 @@
 			isa = PBXGroup;
 			children = (
 				46178B062B4C16EF008E81F3 /* Product.swift */,
+				463546442B4EE7B900C60CA7 /* CategaryProduct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		54C70228EE9CB90527CD6444 /* Pods */ = {
+		4627BB312B4E9158001E85FA /* SearchProductController */ = {
 			isa = PBXGroup;
 			children = (
-				FA2F647475939BBCB36A6243 /* Pods-Wikimedia.debug.xcconfig */,
-				E2DB6DA1C071EFC26351CAA6 /* Pods-Wikimedia.release.xcconfig */,
+				4627BB322B4E9171001E85FA /* View */,
 			);
-			path = Pods;
+			path = SearchProductController;
+			sourceTree = "<group>";
+		};
+		4627BB322B4E9171001E85FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4627BB332B4E9191001E85FA /* SearchProductVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4627BB352B4EDA51001E85FA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4627BB362B4EDA6D001E85FA /* AllProductTVC.swift */,
+				4627BB372B4EDA6D001E85FA /* AllProductTVC.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		46E8C2032B4E74C40074EF7D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				46178AE32B4C0327008E81F3 /* Main.storyboard */,
+				46E8C2042B4E74F70074EF7D /* AllProduct.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		46E8C2062B4E75310074EF7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46178AF12B4C0445008E81F3 /* ProductController */,
+				46E8C2072B4E753F0074EF7D /* AllProduct */,
+				4627BB312B4E9158001E85FA /* SearchProductController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46E8C2072B4E753F0074EF7D /* AllProduct */ = {
+			isa = PBXGroup;
+			children = (
+				4627BB352B4EDA51001E85FA /* Cell */,
+				46E8C20A2B4E756B0074EF7D /* Views */,
+			);
+			path = AllProduct;
+			sourceTree = "<group>";
+		};
+		46E8C20A2B4E756B0074EF7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46E8C2082B4E75570074EF7D /* AllProductVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46E8C20B2B4E7D7C0074EF7D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		46E8C20E2B4E7DD80074EF7D /* UIView+XIB */ = {
+			isa = PBXGroup;
+			children = (
+				46E8C20F2B4E7E430074EF7D /* NavigationCustomView.swift */,
+				46E8C2112B4E7E5B0074EF7D /* NavigationCustomView.xib */,
+			);
+			path = "UIView+XIB";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,11 +262,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46178AEE2B4C0328008E81F3 /* Build configuration list for PBXNativeTarget "Wikimedia" */;
 			buildPhases = (
-				720ECCF91B53AC59D8151DE2 /* [CP] Check Pods Manifest.lock */,
 				46178AD62B4C0327008E81F3 /* Sources */,
 				46178AD72B4C0327008E81F3 /* Frameworks */,
 				46178AD82B4C0327008E81F3 /* Resources */,
-				25402C5C2C2EC1755C86491D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,53 +316,14 @@
 				46178AEA2B4C0328008E81F3 /* LaunchScreen.storyboard in Resources */,
 				46178AF92B4C049E008E81F3 /* ProductTVC.xib in Resources */,
 				46178AE72B4C0328008E81F3 /* Assets.xcassets in Resources */,
+				46E8C2122B4E7E5B0074EF7D /* NavigationCustomView.xib in Resources */,
 				46178AE52B4C0327008E81F3 /* Main.storyboard in Resources */,
+				46E8C2052B4E74F70074EF7D /* AllProduct.storyboard in Resources */,
+				4627BB392B4EDA6D001E85FA /* AllProductTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		25402C5C2C2EC1755C86491D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wikimedia/Pods-Wikimedia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wikimedia/Pods-Wikimedia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wikimedia/Pods-Wikimedia-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		720ECCF91B53AC59D8151DE2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Wikimedia-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46178AD62B4C0327008E81F3 /* Sources */ = {
@@ -296,14 +333,21 @@
 				46E8C2022B4D58970074EF7D /* NetworkType.swift in Sources */,
 				46178AF42B4C047B008E81F3 /* ProductVC.swift in Sources */,
 				46178B0B2B4C2C77008E81F3 /* UIImageView+Extension.swift in Sources */,
+				463546492B4FE27E00C60CA7 /* String+Extension.swift in Sources */,
 				46178AFF2B4C1457008E81F3 /* AlamoNetworkManager.swift in Sources */,
+				4627BB342B4E9191001E85FA /* SearchProductVC.swift in Sources */,
+				4627BB382B4EDA6D001E85FA /* AllProductTVC.swift in Sources */,
 				46178B072B4C16EF008E81F3 /* Product.swift in Sources */,
 				46178AF82B4C049E008E81F3 /* ProductTVC.swift in Sources */,
 				46178AFC2B4C084A008E81F3 /* UITableView+Extension.swift in Sources */,
+				463546452B4EE7B900C60CA7 /* CategaryProduct.swift in Sources */,
+				46E8C2102B4E7E430074EF7D /* NavigationCustomView.swift in Sources */,
 				46178ADE2B4C0327008E81F3 /* AppDelegate.swift in Sources */,
 				46178B022B4C14B1008E81F3 /* Api.swift in Sources */,
 				46178B092B4C18D8008E81F3 /* ApiProvider.swift in Sources */,
 				46178B042B4C165B008E81F3 /* ProductApi.swift in Sources */,
+				46E8C2092B4E75570074EF7D /* AllProductVC.swift in Sources */,
+				463546472B4EE92200C60CA7 /* AllCategaryProductApi.swift in Sources */,
 				46178AE02B4C0327008E81F3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,7 +495,6 @@
 		};
 		46178AEF2B4C0328008E81F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA2F647475939BBCB36A6243 /* Pods-Wikimedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,11 +503,13 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wikimedia/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -484,7 +529,6 @@
 		};
 		46178AF02B4C0328008E81F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2DB6DA1C071EFC26351CAA6 /* Pods-Wikimedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -493,11 +537,13 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wikimedia/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Alamofire
+//import Alamofire
 
 class Api {
     var networkManager: URLSessionNetworkManager
