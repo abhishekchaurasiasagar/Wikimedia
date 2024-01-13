@@ -10,6 +10,7 @@ protocol ApiProvider {
     var allCategaryProductApi : AllCategaryProductApi {get}
     var searchProductApi : SearchProductApi{get}
     var addToCartApi: AddToCartApi{get}
+    var addProductApi: AddProductApi{get}
 }
 
 class ApiProviderImpl: ApiProvider {
@@ -34,5 +35,8 @@ class ApiProviderImpl: ApiProvider {
         return AddToCartApiImpl()
     }
     
+    var addProductApi: AddProductApi{
+        return AddProductApiImpl()
+    }
 }
 

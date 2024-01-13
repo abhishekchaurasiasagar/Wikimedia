@@ -27,5 +27,16 @@ class AllProductVM{
             }
             self.eventHandler?(.stopLoading)
         }
+        
+        ApiProviderImpl.instance.addProductApi.addNewProduct { response in
+            switch response{
+            case .success(let product):
+                print("Your Product added successfully\(product)")
+                break
+            case .failure(let error):
+                self.eventHandler?(.error(error))
+            }
+            self.eventHandler?(.stopLoading)
+        }
     }
 }

@@ -13,8 +13,6 @@ class AllProductVC: UIViewController {
     @IBOutlet weak var productSearchBar: UISearchBar!
     @IBOutlet weak var phoneProductTV: UITableView!
     @IBOutlet weak var catogaryProductTV: UITableView!
-//    var allProduct: [Brand] = []
-//    var totalItem = 0
     
     private var viewModel = AllProductVM()
     
