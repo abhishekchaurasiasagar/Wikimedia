@@ -8,10 +8,12 @@
 protocol ApiProvider {
     var productApi: ProductApi { get }
     var allCategaryProductApi : AllCategaryProductApi {get}
+    var searchProductApi : SearchProductApi{get}
+    var addToCartApi: AddToCartApi{get}
 }
 
 class ApiProviderImpl: ApiProvider {
-
+   
     static var instance = ApiProviderImpl()
     
     private init() {}
@@ -23,4 +25,14 @@ class ApiProviderImpl: ApiProvider {
     var allCategaryProductApi: AllCategaryProductApi{
         return AllCategaryProductApiImpl()
     }
+    
+    var searchProductApi: SearchProductApi{
+        return SearchProductApiImpl()
+    }
+    
+    var addToCartApi: AddToCartApi{
+        return AddToCartApiImpl()
+    }
+    
 }
+

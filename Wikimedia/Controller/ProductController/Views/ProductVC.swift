@@ -18,9 +18,9 @@ class ProductVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DispatchQueue.global(qos: .background).async {
-            self.getHomeAPIDtails()
-        }
+//        DispatchQueue.global(qos: .background).async {
+//            self.getHomeAPIDtails()
+//        }
         
         registerCell()
     }
@@ -33,20 +33,20 @@ class ProductVC: UIViewController {
         productTV.registerCell(type: ProductTVC.self)
     }
     
-    func getHomeAPIDtails(){
-        ApiProviderImpl.instance.productApi.getAllProductCategories { allProduct, error in
-            if error == nil{
-            let _ = allProduct?.query.pages.map({ (key: String, value: Page) in
-                self.productViews.append(PageType(title: value.title, thumbnail: value.thumbnail?.source ?? nil, extract: value.extract))
-                })
-                
-            }else{
-                print("Error \(String(describing: error))")
-            }
-            self.searchResults = self.productViews
-            self.productTV.reloadData()
-        }
-    }
+//    func getHomeAPIDtails(){
+//        ApiProviderImpl.instance.productApi.getAllProductCategories { allProduct, error in
+//            if error == nil{
+//            let _ = allProduct?.query.pages.map({ (key: String, value: Page) in
+//                self.productViews.append(PageType(title: value.title, thumbnail: value.thumbnail?.source ?? nil, extract: value.extract))
+//                })
+//                
+//            }else{
+//                print("Error \(String(describing: error))")
+//            }
+//            self.searchResults = self.productViews
+//            self.productTV.reloadData()
+//        }
+//    }
 }
 
 extension ProductVC: UITableViewDelegate{

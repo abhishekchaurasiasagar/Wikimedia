@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ProductApi {
-    func getAllProductCategories(completion: @escaping (Product?, Error?) -> Void)
+    func getAllProductCategories(completion: @escaping (ResultHandler<Product>))
 }
 
 class ProductApiImpl: Api, ProductApi {
@@ -17,14 +17,14 @@ class ProductApiImpl: Api, ProductApi {
 https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrsearch=apple&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max
 """
 
-    func getAllProductCategories(completion: @escaping (Product?, Error?) -> Void) {
+    func getAllProductCategories(completion: @escaping (ResultHandler<Product>)) {
         let headers = self.buildHeaders(additionalHeaders: nil)
         
         self.networkManager.request(urlString: self.allProductsUrl,
                                     method: .get,
                                     parameters: [:],
                                     headers: headers,
-                                    completion: completion)
+                                    complition: completion)
     }
     
 }
