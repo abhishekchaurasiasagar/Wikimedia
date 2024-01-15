@@ -16,19 +16,20 @@ class AllProductVC: UIViewController {
     
     private var viewModel = AllProductVM()
     private var searchVM = SearchProductVM()
+    private var cellType: ProductList = .searchproduct
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navTitleView.navTitle.text = "Product"
-        configuration()
+//        configuration()
         registerCell()
-        searchVM.searchProduct()
     }
     
     func registerCell(){
         catogaryProductTV.delegate = self
         catogaryProductTV.dataSource = self
         catogaryProductTV.register(UINib(nibName: "AllProductTVC", bundle: nil), forCellReuseIdentifier: "AllProductTVC")
+        catogaryProductTV.register(UINib(nibName: "TitleTVC", bundle: nil), forCellReuseIdentifier: "TitleTVC")
     }
 }
 
@@ -71,37 +72,108 @@ extension AllProductVC{
     }
 }
 
+extension AllProductVC{
+    
+   @MainActor func loadSearchData(searchText: String){
+        self.searchVM.searchProduct(searchText: searchText)
+        searchObserveEvent()
+    }
+    
+    func searchObserveEvent() {
+        searchVM.eventHandler = { [weak self] event in
+            guard let self else { return }
+            
+            switch event {
+            case .loading:
+                /// Indicator show
+                print("Product loading....")
+            case .stopLoading:
+                // Indicator hide kardo
+                print("Stop loading...")
+            case .dataLoaded:
+                print("Data loaded...")
+                DispatchQueue.main.async {
+                    // UI Main works well
+                    
+                    self.catogaryProductTV.reloadData()
+                }
+            case .error(let error):
+                print(error)
+            }
+        }
+    }
+    
+}
+
 extension AllProductVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        switch cellType{
+            case .searchTitle:
+                searchVM.searchProduct(searchText: item.title)
+                cellType = .searchproduct
+                catogaryProductTV.reloadData()
+            case .searchproduct:
+                break
+            }
+    }
 }
 
 extension AllProductVC: UITableViewDataSource{
-    var items:[Brand] { return viewModel.allProduct }
-    var totalItem:Int {return viewModel.totalItem}
+    var items:[Brand] {return searchVM.allSearchProduct}
+//    var totalItem:Int {return viewModel.totalItem}
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        switch cellType{
+        case .searchTitle:
+            return items.count
+        case .searchproduct:
+            return items.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AllProductTVC", for: indexPath) as! AllProductTVC
-        let item = items[indexPath.row]
-            let imgURL = item.thumbnail
-            cell.productImageView.load(url: imgURL)
-            cell.productNameLbl.text = item.title
-            cell.detailLbl.text = item.description
-            cell.prizeLbl.text = "\(String(describing: item.price))"
-            cell.ratingLbl.text =  "\(String(describing: item.rating))"
         
-        
-        //Pagination
-        let totolLocal = items.count
-        if indexPath.row ==  totolLocal - 1{
-            if totalItem > totolLocal{
-                loadData(skip: totolLocal)
+        switch cellType{
+            case .searchTitle:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "TitleTVC", for: indexPath) as! TitleTVC
+                let item = items[indexPath.row]
+                cell.productTitle.text = item.title
+                return cell
+                
+            case .searchproduct:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "AllProductTVC", for: indexPath) as! AllProductTVC
+                let item = items[indexPath.row]
+                let imgURL = item.thumbnail
+                cell.productImageView.load(url: imgURL)
+                cell.productNameLbl.text = item.title
+                cell.detailLbl.text = item.description
+                cell.prizeLbl.text = "\(String(describing: item.price))"
+                cell.ratingLbl.text =  "\(String(describing: item.rating))"
+                
+                //Pagination
+//                let totolLocal = items.count
+//                if indexPath.row ==  totolLocal - 1{
+//                    if totalItem > totolLocal{
+//                        loadData(skip: totolLocal)
+//                    }
+//                }
+                return cell
             }
-        }
-        return cell
     }
+}
+
+extension AllProductVC: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        cellType = .searchTitle
+        loadSearchData(searchText: searchText)
+    }
+}
+
+enum ProductList{
+    case searchTitle
+    case searchproduct
 }

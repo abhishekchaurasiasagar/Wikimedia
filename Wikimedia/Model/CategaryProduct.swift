@@ -24,3 +24,5 @@ struct Brand: Codable {
     let thumbnail: String
     let images: [String]
 }
+
+

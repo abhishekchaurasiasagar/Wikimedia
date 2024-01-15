@@ -27,5 +27,6 @@ class SearchProductApiImpl: Api, SearchProductApi {
             throw error
         }
     }
+    
 }
 
