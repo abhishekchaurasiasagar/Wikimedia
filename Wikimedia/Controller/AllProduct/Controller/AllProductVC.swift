@@ -15,12 +15,14 @@ class AllProductVC: UIViewController {
     @IBOutlet weak var catogaryProductTV: UITableView!
     
     private var viewModel = AllProductVM()
+    private var searchVM = SearchProductVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navTitleView.navTitle.text = "Product"
         configuration()
         registerCell()
+        searchVM.searchProduct()
     }
     
     func registerCell(){

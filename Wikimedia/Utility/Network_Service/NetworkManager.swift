@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias ResultHandler<T> = (Result<T, DataError>) -> Void
+
 
 public enum NetworkEnvironment {
     case production
