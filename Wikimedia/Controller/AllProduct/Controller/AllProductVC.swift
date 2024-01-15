@@ -117,8 +117,11 @@ extension AllProductVC: UITableViewDelegate{
                 searchVM.searchProduct(searchText: item.title)
                 cellType = .searchproduct
                 catogaryProductTV.reloadData()
-            case .searchproduct:
                 break
+            case .searchproduct:
+            let vc = self.storyboard?.instantiateViewController(identifier: "ProductDetailsVCViewController") as! ProductDetailsVCViewController
+            vc.selectedProduct = item
+            self.navigationController?.pushViewController(vc, animated: true)
             }
     }
 }
